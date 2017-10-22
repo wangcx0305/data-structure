@@ -1,0 +1,8 @@
+1) facebook and bookface should return the same hashing value, as they have the same letters
+2) Stringhash2 is superior because it accounts for letter position and not just the letter being present
+3) No because each word is a hashLink, even if it is also a bucket.
+4) No, the table load doesn't have anything to do with how the links are distributed in our implementation.
+5) Yes, each hash will distribute files differently, so there could be more empty buckets in one hash vs the other.
+6) When I ran with 997 on input2.txt i had 483 empty buckets. When I ran with 1000 on input2.txt I had 484 empty buckets (load factor of 10).
+   This indicates that the prime size was using the table more efficiently. 
+7) Increasing the table size improves the performance of the table, at the cost of additional memory usage.
